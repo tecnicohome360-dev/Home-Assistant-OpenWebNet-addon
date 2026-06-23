@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- Fix Docker build failing with `base name ($BUILD_FROM) should not be blank`
+  on installs without a `build.yaml`: the Dockerfile now defaults to a concrete
+  `alpine:3.20` base (still overridable via `BUILD_FROM`).
+- Install `bash` in the image so `run.sh` runs.
+
 ## 0.2.0
 
 - Updated to the current Home Assistant add-on format so it installs on modern
