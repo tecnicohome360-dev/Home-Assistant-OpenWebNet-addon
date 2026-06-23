@@ -1,7 +1,7 @@
-# Default to a concrete Alpine base so the add-on builds even when the
-# Supervisor does not provide BUILD_FROM (no build.yaml). Stays overridable.
-ARG BUILD_FROM=alpine:3.20
-FROM ${BUILD_FROM}
+# Hardcode the base image (no ARG BUILD_FROM) so the build cannot fail with
+# "base name ($BUILD_FROM) should not be blank" when the Supervisor passes an
+# empty BUILD_FROM. alpine:3.20 is multi-arch, so the right arch is resolved.
+FROM alpine:3.20
 
 # Add env
 ENV LANG=C.UTF-8

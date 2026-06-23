@@ -1,6 +1,6 @@
 {
   "name": "Open Web Net USB Gateway",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "slug": "openwebnet",
   "description": "Turn a BTicino/Legrand L4686SDK USB adapter into an OpenWebNet TCP gateway.",
   "url": "http://www.fluture.net/Home_Assistant-Open_Web_Net-addon/",

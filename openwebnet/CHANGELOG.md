@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+- Remove `ARG BUILD_FROM` entirely and hardcode `FROM alpine:3.20`. An empty
+  `BUILD_FROM` passed by the Supervisor can no longer blank out the base image.
+
 ## 0.2.1
 
 - Fix Docker build failing with `base name ($BUILD_FROM) should not be blank`
